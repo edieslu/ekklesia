@@ -51,7 +51,7 @@ class Parroquia(models.Model):
 
 
 class Direccion(models.Model):
-	domicilio=models.CharField('Domicilio', max_length=50)
+	domicilio=models.CharField('Domicilio', max_length=55)
 	provincia=models.ForeignKey(Provincia)
 	canton=models.ForeignKey(Canton)
 	parroquia=models.ForeignKey(Parroquia, related_name='parroquia_civil')
